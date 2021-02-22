@@ -1,14 +1,63 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Tarjeta de crédito válida</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="homepage">
+    <header class="header-homepage">
+      <img class="img-homepage" src="lazo.png" alt="Lazo de regalo">
+      <h1>
+        GIFT CODE
+      </h1>
+    </header>
+    <main class="main-homepage">
+      <h2>
+        ¡BIENVENIDO!
+      </h2>
+      <h3>Ingresa tus datos </h3>
+      <form action="" class="form" id="form">
+        <div class="form-field">
+          <label for="name" >Nombre Pyme:</label>
+          <input type="text" id="name" class="name">
+        </div>
+        <div class="form-field">
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" class="password">
+        </div>
+      
+        <button type="button" id="button" class="button-start">Ingresar</button>
+      </form>
+    </main>
+  </div>
+  <div class="checker">
+    <header class="header-checker">
+      <img class="img-checker" src="visto.png" alt="check">
+      <h1>
+        Verificacion de códigos
+      </h1>
+    </header>
+    <main class="main-checker">
+      <h2>
+        Ingrese el código
+      </h2>
+      <input class="code" type="text" id="code">
+      <button id="check" class="button-check">Verificar</button>
+      <div id="message" class="message">
+      </div>
+      <div id="data" class="data">
+      </div>
+      <button id="newCode" class="button-newCode">Nuevo código</button>
+      <button id="buttonHomePage" class="button-homePage">Cerrar</button>
+    </main>
+  </div>
+  <footer></footer>
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
